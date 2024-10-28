@@ -34,8 +34,8 @@ CONTENT
 }
 
 resource "aws_organizations_policy_attachment" "tagpolicattachment" {
-  policy_id = aws_organizations_policy.example_tag_policy.id
-  target_id = aws_organizations_organizational_unit.nis_ou.id
+  policy_id = aws_organizations_policy.tagpolicy.id
+  target_id = "${var.OU}"
 }
 
 

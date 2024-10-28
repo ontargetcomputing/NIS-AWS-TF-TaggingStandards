@@ -6,5 +6,7 @@ variable "env" {
   default = "sandbox"
 }
 
+variable "OU" {}
+
 # variable "GIT_REPO_URL" {}
 # variable "GIT_COMMIT_HASH" {}
